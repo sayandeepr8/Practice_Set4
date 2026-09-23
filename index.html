@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Amazon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Mini Amazon</h1>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart 🛒</a>
+        </div>
+    </nav>
+
+
+    <!-- Home Page -->
+    <section class="home">
+
+        <h2>Products</h2>
+
+        <div id="productContainer" class="product-grid">
+
+            <!-- Products will be displayed using JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Product Details Popup -->
+    <div id="productModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <img id="modalImage">
+
+            <h2 id="modalName"></h2>
+
+            <p id="modalDescription"></p>
+
+            <h3 id="modalPrice"></h3>
+
+            <button id="modalCartButton">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
