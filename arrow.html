@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Numbers</title>
+</head>
+<body>
+
+    <h2>Numbers Greater Than 50</h2>
+
+    <p id="result"></p>
+
+    <script>
+        let numbers = [10, 25, 55, 70, 45, 80, 30];
+
+        let result = numbers.filter(num => num > 50);
+
+        document.getElementById("result").innerHTML = result;
+    </script>
+
+</body>
+</html>

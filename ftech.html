@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Example</title>
+</head>
+<body>
+
+    <h2>Random Quote</h2>
+
+    <p id="quote"></p>
+    <p id="author"></p>
+
+    <script>
+
+        fetch("https://dummyjson.com/quotes/random")
+            .then(response => response.json())
+            .then(data => {
+
+                document.getElementById("quote").innerHTML =
+                    '"' + data.quote + '"';
+
+                document.getElementById("author").innerHTML =
+                    "Author: " + data.author;
+
+            })
+            .catch(error => {
+
+                document.getElementById("quote").innerHTML =
+                    "Error fetching data";
+
+                console.log(error);
+            });
+
+    </script>
+
+</body>
+</html>
